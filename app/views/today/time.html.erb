@@ -1,0 +1,5 @@
+<% if params[:time_now].present? %>
+  <h1>"The current time is <%= Time.current.strftime("%a, %d %b %Y %I:%M:%S %Z %:z") %>"</h1>
+<% else %>
+  <h1>"The current time is..."</h1>
+<% end %>
